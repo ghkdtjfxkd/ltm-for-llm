@@ -6,22 +6,27 @@
 
 짧고 집중적인 문서들로 나누어 필요한 것만 빠르게 찾을 수 있습니다.
 
-## 하위 폴더들
+## 구조
 
-### `architecture/`
-시스템 구조, 설계 결정, 아키텍처
+### 진입 및 라우팅
 
-### `conventions/`
-코딩 스타일, 네이밍 규칙, 작성 규칙
+| 파일/폴더 | 내용 |
+|----------|------|
+| `entry.md` | 외부 진입점: 지식 추가/조회/업데이트 |
+| `routing/memory-routing.md` | 도메인 내부 라우팅 맵 |
+| `workflows/add-knowledge.md` | 지식 추가 절차 |
+| `workflows/get-knowledge.md` | 지식 조회 절차 |
+| `workflows/update-knowledge.md` | 지식 업데이트 절차 |
 
-### `patterns/`
-자주 쓰는 패턴, 해결책, 좋은 방법들
+### 지식 카테고리
 
-### `troubleshooting/`
-문제 해결 방법, 에러 대응
-
-### `domain-knowledge/`
-도메인 전문 지식, 용어, 비즈니스 로직
+| 폴더 | 내용 |
+|------|------|
+| `architecture/` | 시스템 구조, 설계 결정, 아키텍처 |
+| `conventions/` | 코딩 스타일, 네이밍 규칙, 작성 규칙 |
+| `patterns/` | 자주 쓰는 패턴, 해결책, 좋은 방법들 |
+| `troubleshooting/` | 문제 해결 방법, 에러 대응 |
+| `domain-knowledge/` | 도메인 전문 지식, 용어, 비즈니스 로직 |
 
 ## 핵심 원칙
 

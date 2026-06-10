@@ -4,7 +4,9 @@
 
 ## 목적
 
-LTM 시스템에 새로운 문서를 추가하거나 기존 문서를 수정하는 전체 프로세스를 관리합니다.
+LTM 시스템에 새로운 문서를 추가하거나 기존 문서의 내용을 수정하는 전체 프로세스를 관리합니다.
+
+> **범위 주의**: routing 맵, workflow, overview, entry 등 참조 구조 변경은 `system-maintenance.md` 사용.
 
 ---
 
@@ -27,12 +29,11 @@ LTM 시스템에 새로운 문서를 추가하거나 기존 문서를 수정하�
 **도메인 위임**: `tasks/`
 
 ```
-→ tasks/workflows/create-task.md
+→ tasks/entry.md → workflows/create-task.md
   입력:
     - Task 제목: "문서 추가/수정"
     - 설명: [문서 경로, 목적]
   출력:
-    - Task ID
     - current-state.md 업데이트됨
 ```
 
@@ -56,7 +57,7 @@ LTM 시스템에 새로운 문서를 추가하거나 기존 문서를 수정하�
 **도메인 위임**: `templates/`
 
 ```
-→ templates/workflows/get-template.md
+→ templates/entry.md → workflows/get-template.md
   입력:
     - 타입: [workflow/memory/routing/등]
   출력:
@@ -71,7 +72,7 @@ LTM 시스템에 새로운 문서를 추가하거나 기존 문서를 수정하�
 **도메인 위임**: `memory/`
 
 ```
-→ memory/workflows/check-knowledge.md
+→ memory/entry.md → workflows/get-knowledge.md
   입력:
     - 카테고리: conventions
     - 키워드: [document-style, writing-guidelines]
@@ -94,8 +95,6 @@ LTM 시스템에 새로운 문서를 추가하거나 기존 문서를 수정하�
 
 ## 6. 관련 문서 동기화 확인
 
-**참조**: `routing/sync-rules.md` (예정)
-
 **체크리스트**:
 - [ ] 이 문서와 연결된 다른 문서가 있는가?
 - [ ] 라우팅 맵 업데이트가 필요한가?
@@ -103,7 +102,8 @@ LTM 시스템에 새로운 문서를 추가하거나 기존 문서를 수정하�
 
 **필요시 도메인 위임**:
 ```
-→ memory/workflows/update-knowledge.md
+→ memory/entry.md → workflows/update-knowledge.md
+→ memory/entry.md → workflows/get-knowledge.md (조회 후 수정)
 → routing/ 문서들 수정
 ```
 
@@ -114,9 +114,9 @@ LTM 시스템에 새로운 문서를 추가하거나 기존 문서를 수정하�
 **도메인 위임**: `tasks/`
 
 ```
-→ tasks/workflows/complete-task.md
+→ tasks/entry.md → workflows/complete-task.md
   입력:
-    - Task ID
+    - Task 제목
     - 변경 파일 목록
     - 완료 요약
   출력:
@@ -131,15 +131,15 @@ LTM 시스템에 새로운 문서를 추가하거나 기존 문서를 수정하�
 **입력**: "workflows/에 새로운 워크플로우 추가"
 
 ```
-1. tasks/workflows/create-task.md
+1. tasks/entry.md → workflows/create-task.md
    → Task 생성됨
 
 2. 문서 타입: workflow
 
-3. templates/workflows/get-template.md
+3. templates/entry.md → workflows/get-template.md
    → workflow-template.md 로드
 
-4. memory/workflows/check-knowledge.md
+4. memory/entry.md → workflows/get-knowledge.md
    → conventions/document-style.md 확인
 
 5. 새 워크플로우 작성
@@ -149,9 +149,9 @@ LTM 시스템에 새로운 문서를 추가하거나 기존 문서를 수정하�
 
 6. 동기화 확인
    - routing/main-routing-map.md 업데이트 필요
-   - workflows/workflows-overview.md 업데이트
+   - workflows/overview.md 업데이트
 
-7. tasks/workflows/complete-task.md
+7. tasks/entry.md → workflows/complete-task.md
    → 완료 처리
 ```
 

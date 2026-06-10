@@ -34,6 +34,7 @@
 
 - **문서 업데이트**: `progress/doc-update.md`
 - **특수 상황**: `progress/special-cases.md`
+- **워크플로우 실행**: `entry.md` → 각 `workflows/` 파일 (절차 상세)
 
 ---
 

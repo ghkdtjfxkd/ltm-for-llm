@@ -24,7 +24,7 @@
 **도메인 위임**: `{도메인}/`
 
 ```
-→ {도메인}/workflows/{workflow}.md
+→ {도메인}/entry.md → workflows/{workflow}.md
   입력:
     - {입력 항목}
   출력:

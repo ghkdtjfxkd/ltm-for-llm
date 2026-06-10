@@ -76,6 +76,17 @@ workflows/{적절한-workflow}.md (오케스트레이터)
 
 ---
 
+### 인지 OS 구조 변경
+
+**상황**: routing 맵, workflow, overview, entry 등 참조 그물망을 수정해야 할 때
+**라우팅**: `workflows/system-maintenance.md`
+
+**위임 예상**:
+- tasks/ : Task 생성 및 완료
+- 변경 대상 파일들 직접 수정 (하위 → 상위 순서)
+
+---
+
 ## 빠른 참조 테이블
 
 | 상황 | 워크플로우 | 주요 도메인 |
@@ -84,6 +95,7 @@ workflows/{적절한-workflow}.md (오케스트레이터)
 | 버그 수정 | `workflows/bug-fixing.md` | tasks, memory |
 | 문서 관리 | `workflows/document-management.md` | tasks, templates, memory |
 | 리팩토링 | `workflows/refactoring.md` | tasks, memory |
+| 인지 OS 구조 변경 | `workflows/system-maintenance.md` | workflows, routing, overview |
 
 ---
 

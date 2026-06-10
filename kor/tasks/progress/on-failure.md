@@ -22,8 +22,8 @@
 ## 3. current-state.md에 기록
 
 ```markdown
-## 실패한 작업
-- [ ] Task 제목
+## 완료된 작업
+- [x] **Task 제목** ❌ 실패
   - 실패 일시: YYYY-MM-DD HH:MM
   - 실패 이유: ...
   - 시도한 방법: ...

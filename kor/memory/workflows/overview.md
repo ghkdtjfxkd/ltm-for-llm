@@ -8,14 +8,14 @@
 
 ## 포함된 워크플로우
 
-### `add-knowledge.md` (예정)
+### `add-knowledge.md`
 새로운 지식을 적절한 카테고리에 추가하는 절차
 
-### `update-knowledge.md` (예정)
-기존 지식 문서를 업데이트하는 절차
+### `get-knowledge.md`
+특정 지식을 찾아 로드하는 절차
 
-### `check-knowledge.md` (예정)
-특정 지식이 존재하는지 확인하고 로드하는 절차
+### `update-knowledge.md`
+기존 지식 문서를 업데이트하는 절차
 
 ---
 
@@ -27,7 +27,7 @@
 ## 2. 아키텍처 확인
 
 memory 도메인에 위임:
-→ memory/workflows/check-knowledge.md
+→ memory/entry.md → workflows/get-knowledge.md
   - 카테고리: architecture
   - 키워드: [시스템 구조, 모듈 관계]
 ```
