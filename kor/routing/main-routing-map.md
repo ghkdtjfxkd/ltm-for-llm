@@ -87,6 +87,17 @@ workflows/{적절한-workflow}.md (오케스트레이터)
 
 ---
 
+### 새 프로젝트 LTM 도입 (온보딩)
+
+**상황**: 새 프로젝트에 LTM을 처음 붙이는 경우
+**라우팅**: `workflows/onboarding.md`
+
+**위임 예상**:
+- tasks/ : Task 생성 및 완료
+- memory/ : domain-knowledge, architecture, conventions 초기화
+
+---
+
 ## 빠른 참조 테이블
 
 | 상황 | 워크플로우 | 주요 도메인 |
@@ -96,6 +107,7 @@ workflows/{적절한-workflow}.md (오케스트레이터)
 | 문서 관리 | `workflows/document-management.md` | tasks, templates, memory |
 | 리팩토링 | `workflows/refactoring.md` | tasks, memory |
 | 인지 OS 구조 변경 | `workflows/system-maintenance.md` | workflows, routing, overview |
+| LTM 신규 도입 | `workflows/onboarding.md` | memory, tasks |
 
 ---
 

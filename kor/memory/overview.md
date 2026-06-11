@@ -14,6 +14,7 @@
 |----------|------|
 | `entry.md` | 외부 진입점: 지식 추가/조회/업데이트 |
 | `routing/memory-routing.md` | 도메인 내부 라우팅 맵 |
+| `sync-check.md` | 변경 발생 시 동기화 점검 목록 |
 | `workflows/add-knowledge.md` | 지식 추가 절차 |
 | `workflows/get-knowledge.md` | 지식 조회 절차 |
 | `workflows/update-knowledge.md` | 지식 업데이트 절차 |

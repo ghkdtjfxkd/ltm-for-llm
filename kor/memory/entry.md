@@ -35,3 +35,4 @@
 
 - `routing/memory-routing.md` - 내부 라우팅 맵
 - `../templates/memory-node-template.md` - 지식 문서 템플릿
+- `sync-check.md` - 변경 발생 시 동기화 점검 목록

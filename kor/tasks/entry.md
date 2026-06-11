@@ -28,3 +28,4 @@ Task 생성, 시작, 진행, 완료, 실패 처리를 위한 단일 진입점입
 - `current-state.md` - 현재 진행 상황 (세션 시작 시 첫 번째로 읽기)
 - `ai-task-protocol.md` - Task 처리 전체 규칙 (workflows의 상세 근거)
 - `routing/tasks-routing.md` - 내부 라우팅 맵
+- `sync-check.md` - 변경 발생 시 동기화 점검 목록

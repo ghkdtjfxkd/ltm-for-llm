@@ -31,7 +31,7 @@
 
 해당하는 것이 없으면 이 단계는 건너뜁니다.
 
-추가 절차: `memory/entry.md` → `workflows/add-knowledge.md`
+추가 절차: `memory/entry.md` → `memory/workflows/add-knowledge.md`
 
 ## 3. current-state.md 업데이트
 

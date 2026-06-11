@@ -12,6 +12,7 @@
 |----------|------|
 | `current-state.md` | 현재 진행 중인 작업 상태 (세션 재시작 시 첫 번째로 읽기) |
 | `entry.md` | 외부 진입점: Task 작업별 워크플로우 안내 |
+| `sync-check.md` | 변경 발생 시 동기화 점검 목록 |
 | `ai-task-protocol.md` | AI용 Task 처리 전체 규칙 |
 | `tasks-mutexs.md` | 동시 실행 불가 Task 규칙 |
 | `routing/tasks-routing.md` | Tasks 도메인 내부 라우팅 맵 |
