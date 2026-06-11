@@ -16,6 +16,7 @@ kor/
 │   ├── patterns/
 │   ├── troubleshooting/
 │   └── domain-knowledge/
+├── agents/             # 에이전트 시스템 명세 (Phase 4)
 └── templates/          # 문서 작성 템플릿
 ```
 
@@ -26,6 +27,7 @@ kor/
 - **workflows**: 작업을 어떤 순서로 진행할지 정의
 - **tasks**: 작업 상태 관리, 현재 진행 중인 작업 추적
 - **memory**: 실제 지식과 정보 저장
+- **agents**: 병렬 에이전트 협업 구조 명세 (Memory Manager, Worker Contract)
 - **templates**: 새 문서 작성할 때 사용할 양식
 
 ## 시작하기

@@ -39,6 +39,20 @@ kor/
 5. 각 도메인 entry.md            ← 필요한 도메인에 위임
 ```
 
+## 에이전트 모드 (Phase 4)
+
+복잡한 작업에서는 단일 LLM 대신 역할별 에이전트 협업 구조를 사용합니다.
+
+```
+Orchestrator → Worker Agents (병렬, 읽기 전용) → Memory Manager Agent → kor/memory/
+```
+
+- Worker는 `kor/` 읽기만 허용. 지식은 LearningPayload로 반환
+- Memory Manager만 `kor/memory/` 에 쓴다 (Single Writer)
+- 상세: `agents/overview.md` → `workflows/agent-parallel.md`
+
+---
+
 ## 빠른 참조
 
 | 목적 | 읽을 문서 |

@@ -87,6 +87,18 @@ workflows/{적절한-workflow}.md (오케스트레이터)
 
 ---
 
+### 병렬 에이전트 작업
+
+**상황**: 독립적인 서브태스크 2개 이상을 동시에 처리해야 할 때
+**라우팅**: `workflows/agent-parallel.md`
+
+**위임 예상**:
+- tasks/ : Task 생성 및 완료
+- Worker Agents : 병렬 서브태스크 수행 (읽기만)
+- Memory Manager Agent : LearningPayload 수집 후 memory/ 일괄 업데이트
+
+---
+
 ### 새 프로젝트 LTM 도입 (온보딩)
 
 **상황**: 새 프로젝트에 LTM을 처음 붙이는 경우
@@ -108,6 +120,7 @@ workflows/{적절한-workflow}.md (오케스트레이터)
 | 리팩토링 | `workflows/refactoring.md` | tasks, memory |
 | 인지 OS 구조 변경 | `workflows/system-maintenance.md` | workflows, routing, overview |
 | LTM 신규 도입 | `workflows/onboarding.md` | memory, tasks |
+| 병렬 에이전트 작업 | `workflows/agent-parallel.md` | agents, memory, tasks |
 
 ---
 
